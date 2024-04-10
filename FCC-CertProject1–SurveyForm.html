@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+
+  <body class="mainform">
+    <h1 id="title">freeCodeCamp Survey Form </h1> 
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <form id="survey-form">  
+      <fieldset>
+
+        <label for="name" id="name-label">Please enter your name: <input id="name" type="text" required placeholder="John Smith"></input></label> 
+
+        <label for="email" id="email-label">Please enter your email: <input id="email" type="email" required placeholder="placeholder@email.com"></input></label>
+
+        <label for="number" id="number-label">Please enter your number: <input id="number" type="number" pattern="[0-9]" min="0" max="9999999999" required placeholder="123456789"></input></label>
+      </fieldset>
+      
+      <fieldset>
+        <label for="dropdown">How long have you been in the field of coding?  
+          <select id="dropdown" name="dropdown"> 
+            <option value="">(Select one)</option>
+            <option value="1">1~5 years</option> 
+            <option value="2">5~10 years</option> 
+            <option value="3">10+ years</option> 
+          </select>
+        </label> 
+      </fieldset>
+
+      <fieldset>
+        <legend>Gender (required)</legend> 
+
+        <label for="gender-male"> 
+          <input id="gender-male" type="radio" name="gender" class="inline" value="gender-male" checked/>Male</label>
+
+        <label for="gender-female">
+          <input id="gender-female" type="radio" name="gender" class="inline" value="gender-female"/>Female</label>
+      </fieldset>
+      
+      <fieldset>
+        <label for="comment">Tell us about your experience in the field of coding: 
+          <textarea id="comment" name="comment" rows="3" col="30"> 
+          </textarea>
+        </label> 
+      </fieldset>
+
+      <fieldset>
+        <label>Which OS (operating system) do you use? (multiple choice)
+          <label for="os"> 
+            <input value="mac" id="os" name="os" type="checkbox" class="os"> Mac
+
+            <input value="win" id="os" name="os" type="checkbox" class="os"> Windows
+
+            <input value="linux"id="os" name="os" type="checkbox" class="os"> Linux
+
+            <input value="other" id="os" name="os" type="checkbox" class="os"> Other
+          </label>
+        </label> 
+      </fieldset>
+      <input id="submit" type="submit" value="Submit Form"></input>
+      
+    </form> 
+  </body> 
+
+</html> 
+
+
