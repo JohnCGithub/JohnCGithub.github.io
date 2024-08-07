@@ -6,6 +6,7 @@
 
 body {
     margin: 0;
+    overflow-x: hidden;
 }
 
 :root {
@@ -916,6 +917,14 @@ span {
 
     .about-textbox {
         width: 80%;
+    }
+
+    .headline {
+        font-size: 12px;
+    }
+
+    .location-info { /* The text wrapper for numbers and addresses (so it doesn't conflict with icons) */
+        font-size: 0.7rem;
     }
     
 }
