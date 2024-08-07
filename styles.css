@@ -887,6 +887,14 @@ span {
         height: 30vh;
     }
 
+    h2 {
+        font-size: 20px;
+    }
+    
+    span {
+        font-size: 15px;
+    }
+
     .location-wrapper {
         padding: 3rem 5rem 0 3rem;
     }
@@ -924,7 +932,11 @@ span {
     }
 
     .location-info { /* The text wrapper for numbers and addresses (so it doesn't conflict with icons) */
-        font-size: 0.7rem;
+        font-size: 0.8rem;
+    }
+
+    .location-wrapper {
+        padding: 3rem 5rem 0 0;
     }
     
 }
