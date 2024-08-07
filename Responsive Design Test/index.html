@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Maxpro Company</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+
+        <!--Stylesheets-->
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> <!--SwiperJS Stylesheet-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/> <!--Font Awesome Stylesheet-->
+
+        <!--Scripts-->
+        <script defer src="https://cdn.jsdelivr.net/npm/micro-slider@1.0.9/dist/micro-slider.min.js"></script> <!--Micro-Slider Script-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!--SwiperJS Script-->
+        <script defer src="script.js"></script>
+        
+    </head>
+    <body>
+        <nav class="container">
+
+            <input type="checkbox" id="sidebar-active"> <!--Sidebar-->
+            <label for="sidebar-active" class="open-sidebar-button pre-sidebar">
+                <div class="sidebar-logo"><a href="#"><img id="logo-box" src="images/maxpro-logo.png"></a></div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </label>
+
+
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="links-container"> <!--Navbar-->
+                <label for="sidebar-active" class="close-sidebar-button"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </label>
+
+                <div class="logo-box"><a href="#"><img id="logo-box" src="images/maxpro-logo.png"></a></div>
+                <a href="#">About</a>
+                <a href="#">Team</a>
+                <a href="#">Portfolio</a>
+                <a href="#">News</a>
+                <a href="#">Contact</a>
+        
+            </div>
+        </nav>
+
+        <div class="banner-wrapper container">
+            <span class="banner-text container">Welcome to Maxpro Ventures</span>
+            <span class="banner-text banner-small container">a leading biomedical venture capital firm</span>
+        </div>
+
+        <div class="about-section container"> <!--About Us-->
+
+            <h1 class="about-title"><span>About Us</span></h1>
+
+            <div class="about-textbox">
+                <p class="about-descrip">Maxpro Ventures is an investment firm focused on breakthrough biomedical technology companies. We identify and invest in such excellent companies worldwide with our private equity and venture capital expertise.</p>
+            </div>
+            
+            <button type="button" class="about-button" onclick="location.href='https://youtube.com'">Read more</button>
+        </div>
+
+        <div class="banner-section2 container">
+        </div>
+
+        <div class="about-section container"> <!--Our Team-->
+
+            <h1 class="about-title"><span>Our Team</span></h1>
+
+            <div class="about-textbox">
+                <p class="about-descrip">The Maxpro ventures team consists of experienced professionals with a global perspective. We come from diverse backgrounds with expertise in biotechnology, pharmaceuticals, business development and finance.</p>
+                <button type="button" class="about-button2" onclick="location.href='https://youtube.com'">Read more</button>
+            </div>
+        </div>
+
+        <div id="carousel-body">
+            <ul class="carousel">
+                <li class="card hero1"> 
+                    <h2>Carol Wang, LL.M.</h2>
+                    <span>Assistant Vice President</span>
+                </li>
+
+                <li class="card hero2">
+                    <h2>Vita Lee, Ph.D.</h2>
+                    <span>Vice President</span>
+                </li>
+                <li class="card hero3">
+                    <h2>Michelle Hsu</h2>
+                    <span>Assistant Vice President</span>
+                </li>
+                <li class="card hero4">
+                    <h2>I Ta Yang, Ph.D.</h2>
+                    <span>Assistant Vice President</span>
+                </li>
+                <li class="card hero5">
+                    <h2>Moses Chen Ph.D.</h2>
+                    <span>Managing Partner</span>
+                </li>
+                <li class="card hero6">
+                    <h2>Francis Chung, Ph.D., MBA</h2>
+                    <span>Managing Partner</span>
+                </li>
+                <li class="card hero7">
+                    <h2>Alex Chen, MS, MBA</h2>
+                    <span>Managing Partner</span>
+                </li>
+                <li class="card hero8">
+                    <h2>Aimee Chen, MS</h2>
+                    <span>Partner, General Manager of China</span>
+                </li>
+
+                <li class="card hero9">
+                    <h2>Jason Lin, CPA</h2>
+                    <span>Assistant Vice President</span>
+                </li>
+
+                <li class="card hero10">
+                    <h2>Michael Wang, Ph.D.</h2>
+                    <span>Senior Manager</span>
+                </li>
+
+                <li class="card hero11">
+                    <h2>Eddie Zhao, MS</h2>
+                    <span>Senior Associate</span>
+                </li>
+
+                <li class="card hero12">
+                    <h2>Sharon Liu, MS</h2>
+                    <span>Junior Associate</span>
+                </li>
+            </ul>
+        </div>
+
+        <div id="news" class="container">
+            <div class="about-section"> <!--News-->
+                <h1 class="about-title"><span class="grayed">News</span></h1>
+            </div>
+
+            <div class="swiper newsSwiper">
+
+                <div class="swiper-wrapper"> <!--REMEMBER TO MAKE THE HEADLINE ANCHORS-->
+                    <div class="swiper-slide">
+                        <img src="images/portfolio/ace.png">
+                        <span class="date">2020-1-1</span>
+                        <span class="headline">SUMMIT study provided another treatment options for NSCLC EGFR exon 18 mutations patients</span>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/portfolio/act.png">
+                        <span class="date">2020-1-1</span>
+                        <span class="headline">SUMMIT study provided another treatment options for NSCLC EGFR exon 18 mutations patients</span>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/portfolio/adva.png">
+                        <span class="date">2020-1-1</span>
+                        <span class="headline">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quia facere eius nemo corporis voluptatum rerum labore facilis maiores ex, sit nulla dolorem aspernatur qui voluptates magnam repellendus culpa dolorum?</span>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/portfolio/Anbogen.png">
+                        <span class="date">2020-1-1</span>
+                        <span class="headline">SUMMIT study provided another treatment options for NSCLC EGFR exon 18 mutations patients</span>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/portfolio/Apollomics.png">
+                        <span class="date">2020-1-1</span>
+                        <span class="headline">SUMMIT study provided another treatment options for NSCLC EGFR exon 18 mutations patients</span>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/portfolio/art.png">
+                        <span class="date">2020-1-1</span>
+                        <span class="headline">SUMMIT study provided another treatment options for NSCLC EGFR exon 18 mutations patients</span>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/portfolio/eir.png">
+                        <span class="date">2020-1-1</span>
+                        <span class="headline">SUMMIT study provided another treatment options for NSCLC EGFR exon 18 mutations patients</span>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/portfolio/eui.png">
+                        <span class="date">2020-1-1</span>
+                        <span class="headline">SUMMIT study provided another treatment options for NSCLC EGFR exon 18 mutations patients</span>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/portfolio/foresee.png">
+                        <span class="date">2020-1-1</span>
+                        <span class="headline">SUMMIT study provided another treatment options for NSCLC EGFR exon 18 mutations patients</span>
+                    </div>
+
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                </div>
+            
+        </div>
+
+        <div id="portfolio" class="container">
+            <div class="about-section"> <!--News-->
+                <h1 class="about-title"><span>Our Portfolio Companies</span></h1>
+            </div>
+
+            <div class="swiper portfolioSwiper">
+                <div class="swiper-wrapper"> <!--REMEMBER TO MAKE THE NAMES ANCHORS-->
+
+                    <div class="swiper-slide">
+                        <img src="images/portfolio/ace.png">
+                        <span class="portfolio-name">Acepodia</span>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/portfolio/act.png">
+                        <span class="portfolio-name">Act Genomics</span>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/portfolio/adva.png">
+                        <span class="portfolio-name">Advaxis Immunotherapies</span>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/portfolio/anbogen.png">
+                        <span class="portfolio-name">AnBogen Therapeutics</span>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/portfolio/apollomics.png">
+                        <span class="portfolio-name">Apollomics</span>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/portfolio/art.png">
+                        <span class="portfolio-name">Arthrosi Therapeutics</span>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/portfolio/eir.png">
+                        <span class="portfolio-name">EirGenix</span>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/portfolio/eui.png">
+                        <span class="portfolio-name">EUI 東聯互動</span>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/portfolio/foresee.png">
+                        <span class="portfolio-name">ForeSee</span>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/portfolio/hec.png">
+                        <span class="portfolio-name">Hec</span>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/portfolio/ace.png">
+                        <span class="portfolio-name">Acepopia</span>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/portfolio/imedi.png">
+                        <span class="portfolio-name">iMedi</span>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/portfolio/ace.png">
+                        <span class="portfolio-name">Acepopia</span>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/portfolio/imm.png">
+                        <span class="portfolio-name">Immunwork</span>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/portfolio/ace.png">
+                        <span class="portfolio-name">Acepopia</span>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/portfolio/jhl.png">
+                        <span class="portfolio-name">JHL Biotech</span>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/portfolio/jmac.png">
+                        <span class="portfolio-name">JMAC</span>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/portfolio/launxp.png">
+                        <span class="portfolio-name">Launxp</span>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/portfolio/original.png">
+                        <span class="portfolio-name">Original BioMedicals</span>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/portfolio/pola.png">
+                        <span class="portfolio-name">Polaris Pharmaceuticals</span>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/portfolio/syn.png">
+                        <span class="portfolio-name">SyneuRx</span>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/portfolio/uneuro.png">
+                        <span class="portfolio-name">U-Neuron</span>
+                    </div>
+
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+
+        </div>
+
+        <div id="footer" class="container">
+
+            <div class="footer-content">
+
+                <div class="location-wrapper">
+
+                    <ul class="location loc1">
+                        <li class="location-title">Taipei</li>
+                        <li class="number"><i class="fa-solid fa-phone"></i><span class="location-info">+886 2 7713 7952</span></li>
+                        <li class="address"><i class="fa-solid fa-location-dot"></i><span class="location-info">5F-4, No.89, Songren Rd., Xinyi Dist., Taipei City, Taiwan 11073</span></li>
+                    </ul>
+
+                    <ul class="location loc2">
+                        <li class="location-title">Shanghai</li>
+                        <li class="number"><i class="fa-solid fa-phone"></i><span class="location-info">+86 18411036556</span></li>
+                        <li class="address"><i class="fa-solid fa-location-dot"></i><span class="location-info">Rm 503, Jiangbang Department, No. 368 Hongguan Rd, HongKou Dist., Shanghai, China 200086</span></li>
+                    </ul>
+
+                    <ul class="location loc3">
+                        <li class="location-title">North Hollywood</li>
+                        <li class="number"><i class="fa-solid fa-phone"></i><span class="location-info">+1 949 308 5609</span></li>
+                        <li class="address"><i class="fa-solid fa-location-dot"></i><span class="location-info">5250 Lankershim Blvd., Suite 500, North Hollywood, CA 91601</span></li>
+                    </ul>
+
+                    <ul class="location loc4">
+                        <li class="location-title">Arcadia</li>
+                        <li class="number"><i class="fa-solid fa-phone"></i><span class="location-info">+1 626 242 4429</span></li>
+                        <li class="address"><i class="fa-solid fa-location-dot"></i><span class="location-info">440 E Huntington Dr Suite 300, Arcadia, CA 91006</span></li>
+                    </ul>
+
+                    <ul class="location loc5">
+                        <li class="location-title">Irvine</li>
+                        <li class="number"><i class="fa-solid fa-phone"></i><span class="location-info">+1 626 242 4429</span></li>
+                        <li class="address"><i class="fa-solid fa-location-dot"></i><span class="location-info">Room 651,17901 Von Karman Avenue Suite 600, Irvine, CA, 92614, USA</span></li>
+                    </ul>
+
+                </div>
+
+                <div class="footer-line"><span></span></div>
+
+                <div class="copyright-disclaimer">COPYRIGHT © 2021 MAXPRO  ALL RIGHTS RESERVED.</div>
+            </div>
+
+        </div>
+
+
+    </body>
+
+</html>
