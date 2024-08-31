@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Maxpro Company</title>
+        <title>Maxpro Company Index</title>
+
+        <!--Meta Tags-->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
@@ -10,6 +12,7 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> <!--SwiperJS Stylesheet-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/> <!--Font Awesome Stylesheet-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!-- Animate CSS Stylesheet-->
 
         <!--Scripts-->
         <script defer src="https://cdn.jsdelivr.net/npm/micro-slider@1.0.9/dist/micro-slider.min.js"></script> <!--Micro-Slider Script-->
@@ -33,9 +36,9 @@
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
                 </label>
 
-                <div class="logo-box"><a href="#"><img id="logo-box" src="images/maxpro-logo.png"></a></div>
-                <a href="#">About</a>
-                <a href="#">Team</a>
+                <div class="logo-box"><a href="index.html"><img id="logo-box" src="images/maxpro-logo.png"></a></div>
+                <a href="about.html">About</a>
+                <a href="team.html">Team</a>
                 <a href="#">Portfolio</a>
                 <a href="#">News</a>
                 <a href="#">Contact</a>
@@ -56,7 +59,7 @@
                 <p class="about-descrip">Maxpro Ventures is an investment firm focused on breakthrough biomedical technology companies. We identify and invest in such excellent companies worldwide with our private equity and venture capital expertise.</p>
             </div>
             
-            <button type="button" class="about-button" onclick="location.href='https://youtube.com'">Read more</button>
+            <button class="about-button" onclick="location.href='about.html'">Read more</button>
         </div>
 
         <div class="banner-section2 container">
@@ -68,67 +71,338 @@
 
             <div class="about-textbox">
                 <p class="about-descrip">The Maxpro ventures team consists of experienced professionals with a global perspective. We come from diverse backgrounds with expertise in biotechnology, pharmaceuticals, business development and finance.</p>
-                <button type="button" class="about-button2" onclick="location.href='https://youtube.com'">Read more</button>
+                <button class="about-button2" onclick="location.href='team.html'">Read more</button>
             </div>
         </div>
 
-        <div id="carousel-body">
-            <ul class="carousel">
-                <li class="card hero1"> 
-                    <h2>Carol Wang, LL.M.</h2>
-                    <span>Assistant Vice President</span>
-                </li>
 
-                <li class="card hero2">
-                    <h2>Vita Lee, Ph.D.</h2>
-                    <span>Vice President</span>
-                </li>
-                <li class="card hero3">
-                    <h2>Michelle Hsu</h2>
-                    <span>Assistant Vice President</span>
-                </li>
-                <li class="card hero4">
-                    <h2>I Ta Yang, Ph.D.</h2>
-                    <span>Assistant Vice President</span>
-                </li>
-                <li class="card hero5">
-                    <h2>Moses Chen Ph.D.</h2>
-                    <span>Managing Partner</span>
-                </li>
-                <li class="card hero6">
-                    <h2>Francis Chung, Ph.D., MBA</h2>
-                    <span>Managing Partner</span>
-                </li>
-                <li class="card hero7">
-                    <h2>Alex Chen, MS, MBA</h2>
-                    <span>Managing Partner</span>
-                </li>
-                <li class="card hero8">
-                    <h2>Aimee Chen, MS</h2>
-                    <span>Partner, General Manager of China</span>
-                </li>
+        <div class="team-section container">
+            <div class="swiper teamSwiper"> 
 
-                <li class="card hero9">
-                    <h2>Jason Lin, CPA</h2>
-                    <span>Assistant Vice President</span>
-                </li>
+                <div class="swiper-wrapper"> 
+                    <div class="swiper-slide">
+                        <div class="img-1"></div>
+                        <div class="team-descriptions">
+                            <p class="swiper-text title">Moses Chen, Ph.D.</p>
+                            <p class="swiper-text subtitle">Managing Partner</p>
+                            <button class="swiper-text team-btn" data-modal="modal1">Read More</button>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="img-2"></div>
+                        <div class="team-descriptions">
+                            <p class="swiper-text title">Francis Chung, Ph.D., MBA</p>
+                            <p class="swiper-text subtitle">Managing Partner</p>
+                            <button class="swiper-text team-btn" data-modal="modal2">Read More</button>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="img-3"></div>
+                        <div class="team-descriptions">
+                            <p class="swiper-text title">Alex Chen, MS, MBA</p>
+                            <p class="swiper-text subtitle">Managing Partner</p>
+                            <button class="swiper-text team-btn" data-modal="modal3">Read More</button>
+                        </div>
+                    </div>
 
-                <li class="card hero10">
-                    <h2>Michael Wang, Ph.D.</h2>
-                    <span>Senior Manager</span>
-                </li>
+                    <div class="swiper-slide">
+                        <div class="img-4"></div>
+                        <div class="team-descriptions">
+                            <p class="swiper-text title">Aimee Chen, MS</p>
+                            <p class="swiper-text subtitle">Partner, General Manager China</p>
+                            <button class="swiper-text team-btn" data-modal="modal4">Read More</button>
+                        </div>
+                    </div>
 
-                <li class="card hero11">
-                    <h2>Eddie Zhao, MS</h2>
-                    <span>Senior Associate</span>
-                </li>
+                    <div class="swiper-slide">
+                        <div class="img-5"></div>
+                        <div class="team-descriptions">
+                            <p class="swiper-text title">Jason Lin, CPA</p>
+                            <p class="swiper-text subtitle">Assistant Vice President</p>
+                            <button class="swiper-text team-btn" data-modal="modal5">Read More</button>
+                        </div>
+                    </div>
 
-                <li class="card hero12">
-                    <h2>Sharon Liu, MS</h2>
-                    <span>Junior Associate</span>
-                </li>
-            </ul>
+                    <div class="swiper-slide">
+                        <div class="img-6"></div>
+                        <div class="team-descriptions">
+                            <p class="swiper-text title">Michael Wang, Ph.D.</p>
+                            <p class="swiper-text subtitle">Managing Partner</p>
+                            <button class="swiper-text team-btn" data-modal="modal6">Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="img-7"></div>
+                        <div class="team-descriptions">
+                            <p class="swiper-text title">Eddie Zhao, MS</p>
+                            <p class="swiper-text subtitle">Senior Associate</p>
+                            <button class="swiper-text team-btn" data-modal="modal7">Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="img-8"></div>
+                        <div class="team-descriptions">
+                            <p class="swiper-text title">Emily Yu, LL.M.</p>
+                            <p class="swiper-text subtitle">Legal Counsel</p>
+                            <button class="swiper-text team-btn" data-modal="modal8">Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="img-9"></div>
+                        <div class="team-descriptions">
+                            <p class="swiper-text title">Huei-Ling Liu, Ph.D.</p>
+                            <p class="swiper-text subtitle">Manager</p>
+                            <button class="swiper-text team-btn" data-modal="modal9">Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="img-10"></div>
+                        <div class="team-descriptions">
+                            <p class="swiper-text title">Pin I Wu, LL.M.</p>
+                            <p class="swiper-text subtitle">Manager</p>
+                            <button class="swiper-text team-btn" data-modal="modal10">Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="img-11"></div>
+                        <div class="team-descriptions">
+                            <p class="swiper-text title">Vita Lee, Ph.D.</p>
+                            <p class="swiper-text subtitle">Vice President</p>
+                            <button class="swiper-text team-btn" data-modal="modal11">Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="img-12"></div>
+                        <div class="team-descriptions">
+                            <p class="swiper-text title">Michelle Hsu</p>
+                            <p class="swiper-text subtitle">Assistant Vice President</p>
+                            <button class="swiper-text team-btn" data-modal="modal12">Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="img-13"></div>
+                        <div class="team-descriptions">
+                            <p class="swiper-text title">I Ta Yang, Ph.D.</p>
+                            <p class="swiper-text subtitle">Assistant Vice President</p>
+                            <button class="swiper-text team-btn" data-modal="modal13">Read More</button>
+                        </div>
+                    </div>
+    
+                </div>
+
+                 <!-- Buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                
+            </div>
+            
+           
+    
+            <!-- Modal Section -->
+            <div class="overlay"></div>
+    
+            <div class="modal" id="modal1">
+    
+                <div class="close-btn">&times;</div>
+    
+                <p class="text-modal">
+                    Mr. Chen has extensive experiences in therapeutics research and development, regulatory strategy and company operation. He has over 20 years experience in regenerative medicine, cell therapy, biologics and small molecule therapeutics products R&D covering CNS, psychiatric, cancers, cardiovascular, pulmonary, renal, hepatic, autoimmune, ophthalmic and metabolic diseases.  Prior to joining Maxpro ventures, Mr. Chen was VP and Acting COO of SyneuRx International Inc. (Taiwan). Prior to that, he was VP of Pharmacology at Meridigene (Taiwan). Before returning to Taiwan, Mr. Chen spent 14 years in biotech companies in the US including Celgene as Sr. Principal Scientist, Amcyte as group leader and VivoRx as Sr. Scientist. Through his carrier in industry, Mr. Chen was instrumental to many successful IND submissions to regulatory authorities in the US, Canada and Taiwan. Among them, two were granted Breakthrough Therapy Designation (BTD) by the US FDA. Prior to his career in biotech industry, Mr. Chen was a senior research fellow (faculty rank) in Biology Division at California Institute of Technology. Currently, Mr. Chen is also an ad hoc reviewer of Stem Cells Translational Medicine and a supervisor of ReVasgen Inc.
+                </p>
+    
+                <p class="text-modal">
+                    Mr. Chen received his Ph.D. in Microbiology and Molecular Genetics from Rutgers, The State University of New Jersey and The University of Medicine and Dentistry of New Jersey. He did his postdoctoral training in neuroscience at California Institute of Technology.
+                </p>
+    
+            </div>
+    
+            <div class="modal" id="modal2">
+    
+                <div class="close-btn">&times;</div>
+    
+                <p class="text-modal">
+                    Mr. Chung has been a professional venture capitalist since year 2000. With a background in pharmaceutical science, Mr. Chung has been involved in cutting-edge therapeutic start-ups and identifying potential drug discovery projects originated from research institutes. In the course of his experience, he has made successful investment in 30 life science ventures with exit through IPO or M&A. His past investment included Pharmasset, Peninsula, Cerexa, Tanox, Corgentech, Santarus, Anchen, Epitomics, Renovis, Xanthus, PharmaEngine, TaiRx, and TaiMed. Present board memberships include Innopharmax, Tekho, Intech, and Jaguar Technology.
+                </p>
+    
+                <p class="text-modal">
+                    Prior to MaxPro, Mr. Chung was VP & Managing Director of TaiAn Technologies, the largest biotech venture capital in Taiwan. Previous to that, Francis held executive positions at TTY Biopharm, CDIB Bioscience Ventures, Fortune Ventures, and SynpacKingdom Pharmaceuticals. He was also involved in drug discovery and development at Pfizer and Eli-Lilly.
+                </p>
+    
+                <p class="text-modal">
+                    Mr. Chung received his B.S. in Chemistry from National Taiwan University, his Ph.D. in  Pharmaceutics from University of Iowa, and his MBA from National Taiwan University.
+                </p>
+    
+            </div>
+    
+            <div class="modal" id="modal3">
+    
+                <div class="close-btn">&times;</div>
+    
+                <p class="text-modal">
+                    Mr. Chen, with backgrounds in biotechnology and venture capital, is a founder of Maxpro Ventures. Mr. Chen’s professional expertise in asset management has led to his successful execution of more than 60 private equity investment transactions in the USA and the Asia-Pacific region. His past investments included Acepodia, SyneuRx, GenScript, JHL Biotech, Foresee, HEC Pharma, and ACT Genomics Holdings, to list a few.
+                </p>
+    
+                <p class="text-modal">
+                    Prior to founding Maxpro Ventures, Mr. Chen was Senior Director of Integral Group. He was jointly in charge of Integral’s Asian transaction process, managed its Shanghai branch, and served as a board member of multiple portfolio companies such as Generon Corporation, FusionVax, Inc., BioLite, Inc., and Flora International Group Co., Ltd.. From 1999 to 2012, Mr. Chen held various senior management positions in the investment division at Central Investment Holdings. During that period, his successful investments included Tanox and Biopure, to name just a few. In 2002, a significant transaction that Mr. Chen had made was the acquisition of SEEDNet by New Century InfoComm Tech. He also served on several corporate boards, such as Concord Fund Company, Singfor Life Insurance Company, and CTCI Corporation.
+                </p>
+    
+                <p class="text-modal">
+                    Mr. Chen received an MBA from Syracuse University and an MS from the University of Minnesota.
+                </p>
+    
+            </div>
+
+            <div class="modal" id="modal4">
+    
+                <div class="close-btn">&times;</div>
+    
+                <p class="text-modal">
+                    Ms. Hong joined Maxpro in 2021. She has strong accounting and financial background. Prior to Maxpro, Ms. Hong was the chief accountant of Integral Shanghai. During the 12 years tenure with Integral Group, she developed herself to be an expert in many facets in investment including accounting operations, fund raising, investing and project management. She led and participated in many investment projects, including Shandong Buchang Pharmaceuticals Co., Meituan, Dianping, Benlai, Generon Corporation, Golden Crown Energy, covering biotech, o2o, new energy, big consumption and other fields.
+                </p>
+    
+                <p class="text-modal">
+                    Ms. Hong received a BA degree in economics from Shandong University and an MS degree in finance from Fudan University.
+                </p>
+    
+            </div>
+            
+            <div class="modal" id="modal5">
+    
+                <div class="close-btn">&times;</div>
+    
+                <p class="text-modal">
+                    Mr. Lin is a US CPA who worked for KPMG US for three years as a Senior Associate in the Audit practice responsible for auditing clients in Private Equity, Real Estate Management/Development, and Consumer Goods industries. At KPMG, he gained valuable experience in practicing US GAAP, establishing and testing internal controls, and performing financial analyses/due diligence to identify potential risk areas in companies’ financial statements. After leaving public accounting, Mr. Lin worked as a mortgage banker and financial analyst.
+                </p>
+    
+                <p class="text-modal">
+                    Mr. Lin received his BA in Accounting and Finance from the University of Washington, Seattle.
+                </p>
+    
+            </div>
+
+            <div class="modal" id="modal6">
+    
+                <div class="close-btn">&times;</div>
+    
+                <p class="text-modal">
+                    Mr. Wang joined Maxpro in 2022 with a background in Biomedical Sciences. He has extensive research experiences in biochemistry, molecular biology, cell biology, cancer biology and neuroscience.
+                </p>
+    
+                <p class="text-modal">
+                    Prior to joining Maxpro Ventures, he worked as a senior R&D engineer at GeneReach Biotechnology Corp. for the development of diagnostic assays.
+                </p>
+    
+                <p class="text-modal">
+                    Mr. Wang received his PhD degree in Integrative Molecular and Biomedical Sciences from Baylor College of Medicine and pursued post-doctoral training in neuroscience at University of California, Davis.
+                </p>
+    
+            </div>
+
+            <div class="modal" id="modal7">
+    
+                <div class="close-btn">&times;</div>
+    
+                <p class="text-modal">
+                    Mr. Zhao joined Maxpro in 2019 with a strong financial background. Prior to joining Maxpro, Mr. Zhao was an Investment Analyst at Brother Enterprises Holding with a focus on M&A and business strategies. He helped Brother set up new business modules in active pharmaceutical ingredients and chemical drugs.
+                </p>
+    
+                <p class="text-modal">
+                    Mr. Zhao received a M.S. in Finance from Ohio State University, a B.S. in Finance and a second B.S. in International Business from Marquette University.
+                </p>
+    
+            </div>
+
+            <div class="modal" id="modal8">
+    
+                <div class="close-btn">&times;</div>
+    
+                <p class="text-modal">
+                    I-Wen Yu, a seasoned legal professional with over eight years of experience in the IT and medical technology industries. I-Wen holds admissions to the Taiwan Bar and New York Bar. Her expertise includes advising on legal risks, ensuring compliance, drafting contracts, negotiating agreements, and managing disputes.
+                </p>
+    
+            </div>
+
+            <div class="modal" id="modal9">
+    
+                <div class="close-btn">&times;</div>
+    
+                <p class="text-modal">
+                    Ms. Liu has extensive project management and business development experience in the biotech industry for 8 years along with interdisciplinary scientific knowledge in the fields of chemistry, biology, and physics during her academic training. Prior to joining Maxpro ventures, Ms. Liu served as project manager and account manager for ScinoPharm and Tanvex.
+                </p>
+    
+                <p class="text-modal">
+                    Ms. Liu received her PhD degree in Biophysical Chemistry and BS degree in Chemistry from National Taiwan University.
+                </p>
+    
+            </div>
+
+            <div class="modal" id="modal10">
+    
+                <div class="close-btn">&times;</div>
+    
+                <p class="text-modal">
+                    Mr. Wu joined Maxpro in 2024 with a background in law. Prior to Maxpro, he worked at the Institution for Information Industry as a legal researcher, specializing in trade secret law, Nation Core Technology, semiconductor export control, and national security. Before that, he was an associate attorney at the Shin-Shan Chen Law Firm, where he mainly dealt with criminal litigation and matters related to Banking Act. In addition to his research and litigation experience, Mr. Wu also served as legal counsel to SYMPHOX Co., Ltd. and Rain Forest Retail Co., Ltd. During his tenure at these companies, he was responsible for handling numerous contracts and corporate governance matters.
+                </p>
+    
+                <p class="text-modal">
+                    Mr. Wu holds an LL.M. degree from Boston University and an LL.B. degree from Soochow University.
+                </p>
+    
+            </div>
+
+            <div class="modal" id="modal11">
+    
+                <div class="close-btn">&times;</div>
+    
+                <p class="text-modal">
+                    Ms. Lee comes with quality, regulatory and project evaluation experiences in pharmaceuticals along with extensive biomedical research knowledge during her academic training. Prior to joining Maxpro ventures, Ms. Lee served as quality and regulatory affairs for JHL biotech (Eden Biologics) and Lumosa therapeutics (for 9 years).
+                </p>
+    
+                <p class="text-modal">
+                    Ms. Lee received her PhD in Biochemistry from Texas A&M University and pursued postdoc training at the world-leading MD Anderson cancer center. During the postdoc training, she also obtained a certificate of biotech pharmaceuticals development management from Rice University MBA Alliance program.
+                </p>
+
+            </div>
+
+            <div class="modal" id="modal12">
+    
+                <div class="close-btn">&times;</div>
+    
+                <p class="text-modal">
+                    Ms. Hsu has over 15 years of financial institutions and private equity experience, including DnB, Jardine Matheson and SGO PE Fund. During the years, she focused on the accounting operations and project management. She also has participated in the fundraising plan for start-up companies, one of them is Meiya app in Pre-A round.
+                </p>
+    
+                <p class="text-modal">
+                    Ms. Hsu received a BA degree in Accounting from Fu Jen University.
+                </p>
+    
+            </div>
+
+            <div class="modal" id="modal13">
+    
+                <div class="close-btn">&times;</div>
+    
+                <p class="text-modal">
+                    Mr. Yang joined Maxpro in 2021 with a strong analytical and quantitative background. In the course of his Ph.D. studies, he worked closely with one of the major banks in the United States and helped them optimize their business strategy by developing various mathematical models.
+                </p>
+    
+                <p class="text-modal">
+                    Mr. Yang received his Ph.D. degree in Economics from Carnegie Mellon University and BA degrees in both Mathematical Science and Economics.
+                </p>
+    
+            </div>
+
         </div>
+
+        
 
         <div id="news" class="container">
             <div class="about-section"> <!--News-->
@@ -200,9 +474,9 @@
             
         </div>
 
-        <div id="portfolio" class="container">
+        <div id="portfolio" class="">
             <div class="about-section"> <!--News-->
-                <h1 class="about-title"><span>Our Portfolio Companies</span></h1>
+                <h1 class="about-title container"><span>Portfolio</span></h1>
             </div>
 
             <div class="swiper portfolioSwiper">
@@ -323,7 +597,6 @@
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
             </div>
-
 
         </div>
 
